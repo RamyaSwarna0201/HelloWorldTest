@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.5</version>
+		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>HelloWorld</artifactId>
+	<artifactId>HelloWorldTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>HelloWorldTest</name>
 	<description>Demo project for Spring Boot</description>
@@ -47,6 +47,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.1.0</version>
+  <executions>
+    <execution>
+      <id>default-clean</id>
+      <phase>clean</phase>
+      <goals>
+        <goal>clean</goal>
+      </goals>
+    </execution>
+  </executions>
 			</plugin>
 		</plugins>
 	</build>
