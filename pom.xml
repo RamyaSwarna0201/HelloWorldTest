@@ -53,7 +53,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>3.4.1</version>
-  <executions>
+  <!--<executions>
     <execution>
       <id>default-clean</id>
       <phase>clean</phase>
@@ -61,8 +61,12 @@
         <goal>clean</goal>
       </goals>
     </execution>
-  </executions>
+  </executions>-->
 			</plugin>
+			<plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.3.2</version><!--$NO-MVN-MAN-VER$-->
+        </plugin>
 		</plugins>
 	</build>
 
